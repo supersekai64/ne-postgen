@@ -247,7 +247,7 @@ export function Studio() {
           <div className="gallery-note"><Info size={15} aria-hidden="true" /><p>Une même identité graphique, des formats adaptés à vos réseaux sociaux.</p></div>
         </>}
       </main>
-      <footer className="studio-footer"><span>PostGen · Projet Lisnard</span><div className="footer-links"><LegalNoticeDialog /><LegalDialog kind="rules" /><LegalDialog kind="privacy" /></div><p className="footer-disclaimer">Initiative indépendante de soutiens. Ce site ne dépend ni de Nouvelle Énergie ni de David Lisnard.</p></footer>
+      <footer className="studio-footer"><span>PostGen · Projet Lisnard</span><div className="footer-links"><LegalNoticeDialog /><LegalDialog kind="rules" /><LegalDialog kind="privacy" /><a className="footer-link inline-flex items-center" href="https://www.projetlisnard.fr/" target="_blank" rel="noopener noreferrer">Tous les outils Projet Lisnard<span className="sr-only"> (nouvel onglet)</span></a></div><p className="footer-disclaimer">Initiative indépendante de soutiens. Ce site ne dépend ni de Nouvelle Énergie ni de David Lisnard.</p></footer>
     </div>
     <AlertDialog open={pendingNavigation !== null} onOpenChange={(open) => { if (!open) setPendingNavigation(null); }}>
       <AlertDialogContent onCloseAutoFocus={(event) => {
